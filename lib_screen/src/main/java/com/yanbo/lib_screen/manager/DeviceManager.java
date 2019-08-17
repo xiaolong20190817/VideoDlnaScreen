@@ -104,6 +104,8 @@ public class DeviceManager {
      */
     public void setClingDeviceList(List<ClingDevice> list) {
         clingDeviceList = list;
+        ControlManager.getInstance().destroy();
+        ControlManager.getInstance();
     }
 
 
